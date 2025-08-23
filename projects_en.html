@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MY WORK</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #222;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 0;
+    }
+    .project-link {
+      margin: 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #333;
+    }
+    .project-link img {
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .project-title {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  </style>
+
+<style>
+.lb-prev, .lb-next {
+    position: fixed !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 10000 !important;
+}
+.lb-prev {
+    left: 20px !important;
+}
+.lb-next {
+    right: 20px !important;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>MY WORK</h1>
+  </header>
+  <nav>
+    <a href="index_en.html">HOME</a>
+    <a href="bio_en.html">BIO</a>  
+    <a href="blog_en.html" style="margin-left: 15px;">BLOG</a>
+    <a href="words_en.html">THOUGHTS</a>
+    <a href="contact_en.html">CONTACT</a>
+  </nav>
+  <div class="gallery">
+    <a href="Whispers of My Life.html" class="project-link">
+      <img src="Whispers of My Life/photo1.jpg" alt="Whispers of My Life"/>
+      <div class="project-title">Whispers of My Life</div>
+    </a>
+    <a href="colored_street.html" class="project-link">
+      <img src="colored_street/photo1.jpg" alt="Street with colour"/>
+      <div class="project-title">Street with colour</div>
+    </a> 
+    <a href="at_work.html" class="project-link">
+      <img src="at_work/photo1.jpg" alt="At Work"/>
+      <div class="project-title">At Work</div>
+    </a>
+    <a href="Guca.html" class="project-link">
+      <img src="Guca/photo1.jpg" alt="Guca"/>
+      <div class="project-title">Guca Serbia</div>
+    </a>   
+    <a href="alexia.html" class="project-link">
+      <img src="alexia/photo1.jpg" alt="Alexia"/>
+      <div class="project-title">Alexia</div>
+    </a>
+    <a href="santorini.html" class="project-link">
+      <img src="Santorini/photo1.jpg" alt="Santorini"/>
+      <div class="project-title">Santorini</div>
+    </a>
+      <a href="faces.html" class="project-link">
+      <img src="Faces/photo1.jpg" alt="Faces"/>
+      <div class="project-title">Faces</div>
+    </a>
+      <a href="no_rolling_stones.html" class="project-link">
+      <img src="no_rolling_stones/photo1.jpg" alt="No rolling stones"/>
+      <div class="project-title">No rolling stones</div>
+    </a>      
+    <a href="konstantinopoli.html" class="project-link">
+      <img src="Konstantinopoli/photo1.jpg" alt="Konstantinoupoli"/>
+      <div class="project-title">Konstantinoupoli</div>
+    </a>
+    <a href="mikra_xamogela.html" class="project-link">
+      <img src="Mikra_Xamogela/photo1.jpg" alt="Little smiles"/>
+      <div class="project-title">Little smiles</div>
+    </a>
+    <a href="zante.html" class="project-link">
+      <img src="Zante/photo1.jpg" alt="Zante"/>
+      <div class="project-title">Zante</div>
+    </a>
+    <a href="topia.html" class="project-link">
+      <img src="Topia/photo1.jpg" alt="Landscapes"/>
+      <div class="project-title">Landscapes</div>
+    </a>
+    <a href="napoli.html" class="project-link">
+      <img src="Napoli/photo1.jpg" alt="Napoli"/>
+      <div class="project-title">Napoli</div>
+    </a>
+    <a href="paris.html" class="project-link">
+      <img src="Paris/photo1.jpg" alt="Paris"/>
+      <div class="project-title">Paris</div>
+    </a>
+    <a href="patra.html" class="project-link">
+      <img src="Patra/photo1.jpg" alt="Patra"/>
+      <div class="project-title">Patra</div>
+    </a>
+    <a href="carnival.html" class="project-link">
+      <img src="carnival/photo1.jpg" alt="Carnival"/>
+      <div class="project-title">Carnival</div>
+    </a>
+    
+</a>
+ 
+  </div>
+
+<!-- Βελάκι για επιστροφή στην κορυφή -->
+<div id="scrollToTop" onclick="scrollToTop()">⬆</div>
+
+<style>
+#scrollToTop {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background: rgba(0,0,0,0.0);
+    color: black;
+    font-size: 22px;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+</style>
+
+<script>
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Εμφάνιση/Απόκρυψη του κουμπιού όταν γίνεται scroll
+window.addEventListener("scroll", function() {
+  const button = document.getElementById("scrollToTop");
+  if (window.scrollY > 200) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+});
+</script>
+
+
+
+</body>
+</html>

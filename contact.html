@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>n i k o s   y f a n t i s</title>
+<style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        color: #222;
+        padding: 20px;
+      }
+      header {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #222;
+      }
+      nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      nav a:hover {
+        background-color: #555;
+      }
+      .contact-section {
+        max-width: 800px;
+        margin: 80px auto;
+        text-align: center;
+        line-height: 1.8;
+      }
+      .social-icons {
+        margin-top: 30px;
+      }
+      .social-icons a {
+        display: inline-block;
+        margin: 0 15px;
+      }
+      .social-icons img {
+        width: 50px;
+        height: 50px;
+      }
+      .email-text {
+        margin-top: 20px;
+        font-size: 18px;
+      }
+    
+.contact-form {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-size: 16px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-form button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #444;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
+  nav a {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .responsive-title {
+    font-size: 5vw;
+    letter-spacing: 0.15em;
+    padding: 0 3vw;
+  }
+
+  .language-switcher {
+    top: 65px;
+    right: 8px;
+    transform: scale(0.9);
+  }
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+<header>
+<h1>Contact me</h1>
+</header>
+<nav>
+<a href="index.html">Αρχικη</a>
+<a href="bio.html">Βιογραφικο</a>
+<a href="projects.html">Η δουλεια μου</a>
+<a href="blog.html">Blog</a>
+<a href="words.html">Σκεψεις</a>
+</nav>
+<div class="contact-section">
+<p>Μπορείτε να επικοινωνήσετε μαζί μου μέσω των κοινωνικών δικτύων:</p>
+<div class="social-icons">
+<a href="https://web.facebook.com/ifanik" target="_blank">
+<img alt="Facebook" src="Contact/Facebook_-icon.png.png"/>
+</a>
+<a href="https://www.instagram.com/nick.yfantis/" target="_blank">
+<img alt="Instagram" src="Contact/instagram-icon.png.png"/>
+</a>
+</div>
+<p class="email-text">ή μέσω email: <a href="mailto:ifanik@gmail.com">ifanik@gmail.com</a></p>
+</div>
+<div class="contact-section">
+<p>Θα χαρώ πολύ να έχω την γνώμη σας για την φωτογραφία μου, για το site, αλλά και για οποιαδήποτε άλλη επικοινωνία. Σας ευχαριστώ πολύ:</p>
+<div class="contact-form">
+<h2>Φόρμα Επικοινωνίας</h2>
+<form action="https://formsubmit.co/ifanik@gmail.com" method="POST">
+<input name="_captcha" type="hidden" value="false"/>
+<input name="_subject" type="hidden" value="Νέο μήνυμα από τη σελίδα"/>
+<input name="_template" type="hidden" value="table"/>
+<label for="name">Όνομα:</label><br/>
+<input id="name" name="name" required="" type="text"/><br/><br/>
+<label for="email">Email:</label><br/>
+<input id="email" name="email" required="" type="email"/><br/><br/>
+<label for="message">Μήνυμα:</label><br/>
+<textarea id="message" name="message" required="" rows="5"></textarea><br/><br/>
+<button type="submit">Αποστολή</button>
+</form>
+</div>
+
+</body>
+</html>

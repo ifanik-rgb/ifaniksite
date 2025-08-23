@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paris</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
+<style>
+    .lightbox img {
+        border: none !important;
+        box-shadow: none !important;
+    }
+</style>
+<style>
+.gallery-img {
+    height: 300px;
+    width: auto;
+    margin: 5px;
+    object-fit: contain;
+}
+.lb-close {
+    display: none !important;
+}
+</style>
+
+
+
+<style>
+.lb-prev, .lb-next {
+    position: fixed !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 10000 !important;
+}
+.lb-prev {
+    left: 20px !important;
+}
+.lb-next {
+    right: 20px !important;
+}
+</style>
+</head>
+<body style="background-color: #111; color: white; font-family: sans-serif; text-align: center;">
+
+
+<nav class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="bio.html">BIO</a>
+  <a href="projects.html">MY WORK</a>
+  <a href="blog.html">BLOG</a>
+  <a href="words.html">THOUGHTS</a>
+  <a href="contact.html">CONTACT</a>
+</nav>
+
+<style>
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 20px;
+  background-color: #111;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+.navbar a:hover {
+  color: #aaa;
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+}
+</style>
+
+
+
+    <h1>Paris</h1>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+        <a href="paris/photo1.jpg" data-lightbox="gallery"><img src="paris/photo1.jpg" class="gallery-img"/></a>
+<a href="paris/photo2.jpg" data-lightbox="gallery"><img src="paris/photo2.jpg" class="gallery-img"/></a>
+<a href="paris/photo3.jpg" data-lightbox="gallery"><img src="paris/photo3.jpg" class="gallery-img"/></a>
+<a href="paris/photo4.jpg" data-lightbox="gallery"><img src="paris/photo4.jpg" class="gallery-img"/></a>
+<a href="paris/photo5.jpg" data-lightbox="gallery"><img src="paris/photo5.jpg" class="gallery-img"/></a>
+<a href="paris/photo6.jpg" data-lightbox="gallery"><img src="paris/photo6.jpg" class="gallery-img"/></a>
+<a href="paris/photo7.jpg" data-lightbox="gallery"><img src="paris/photo7.jpg" class="gallery-img"/></a>
+<a href="paris/photo8.jpg" data-lightbox="gallery"><img src="paris/photo8.jpg" class="gallery-img"/></a>
+<a href="paris/photo9.jpg" data-lightbox="gallery"><img src="paris/photo9.jpg" class="gallery-img"/></a>
+<a href="paris/photo10.jpg" data-lightbox="gallery"><img src="paris/photo10.jpg" class="gallery-img"/></a>
+<a href="paris/photo11.jpg" data-lightbox="gallery"><img src="paris/photo11.jpg" class="gallery-img"/></a>
+<a href="paris/photo12.jpg" data-lightbox="gallery"><img src="paris/photo12.jpg" class="gallery-img"/></a>
+<a href="paris/photo13.jpg" data-lightbox="gallery"><img src="paris/photo13.jpg" class="gallery-img"/></a>
+<a href="paris/photo14.jpg" data-lightbox="gallery"><img src="paris/photo14.jpg" class="gallery-img"/></a>
+<a href="paris/photo15.jpg" data-lightbox="gallery"><img src="paris/photo15.jpg" class="gallery-img"/></a>
+<a href="paris/photo16.jpg" data-lightbox="gallery"><img src="paris/photo16.jpg" class="gallery-img"/></a>
+<a href="paris/photo17.jpg" data-lightbox="gallery"><img src="paris/photo17.jpg" class="gallery-img"/></a>
+<a href="paris/photo18.jpg" data-lightbox="gallery"><img src="paris/photo18.jpg" class="gallery-img"/></a>
+<a href="paris/photo19.jpg" data-lightbox="gallery"><img src="paris/photo19.jpg" class="gallery-img"/></a>
+<a href="paris/photo20.jpg" data-lightbox="gallery"><img src="paris/photo20.jpg" class="gallery-img"/></a>
+<a href="paris/photo21.jpg" data-lightbox="gallery"><img src="paris/photo21.jpg" class="gallery-img"/></a>
+<a href="paris/photo22.jpg" data-lightbox="gallery"><img src="paris/photo22.jpg" class="gallery-img"/></a>
+<a href="paris/photo23.jpg" data-lightbox="gallery"><img src="paris/photo23.jpg" class="gallery-img"/></a>
+<a href="paris/photo24.jpg" data-lightbox="gallery"><img src="paris/photo24.jpg" class="gallery-img"/></a>
+<a href="paris/photo25.jpg" data-lightbox="gallery"><img src="paris/photo25.jpg" class="gallery-img"/></a>
+<a href="paris/photo26.jpg" data-lightbox="gallery"><img src="paris/photo26.jpg" class="gallery-img"/></a>
+<a href="paris/photo27.jpg" data-lightbox="gallery"><img src="paris/photo27.jpg" class="gallery-img"/></a>
+<a href="paris/photo28.jpg" data-lightbox="gallery"><img src="paris/photo28.jpg" class="gallery-img"/></a>
+<a href="paris/photo29.jpg" data-lightbox="gallery"><img src="paris/photo29.jpg" class="gallery-img"/></a>
+<a href="paris/photo30.jpg" data-lightbox="gallery"><img src="paris/photo30.jpg" class="gallery-img"/></a>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+
+
+<!-- Κουμπί "X" για έξοδο από το slideshow -->
+<div id="exit-slideshow" onclick="closeLightbox()">X</div>
+
+<style>
+#exit-slideshow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 99999;
+    display: none;
+}
+</style>
+
+<script>
+function closeLightbox() {
+    const closeBtn = document.querySelector('.lightboxOverlay .lb-close');
+    if (closeBtn) closeBtn.click();
+    document.getElementById("exit-slideshow").style.display = "none";
+    window.location.href = 'paris.html';
+}
+
+// Εμφάνιση του κουμπιού "X" όταν ανοίγει Lightbox
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.addEventListener("click", function(e) {
+    if (e.target.matches('[data-lightbox]') || e.target.closest('[data-lightbox]')) {
+      setTimeout(() => {
+        document.getElementById("exit-slideshow").style.display = "block";
+      }, 300);
+    }
+  });
+
+  // Απόκρυψη όταν κλείνει το Lightbox
+  document.addEventListener("keyup", function(e) {
+    if (e.key === "Escape") {
+      document.getElementById("exit-slideshow").style.display = "none";
+    }
+  });
+});
+</script>
+
+<!-- Βελάκι για επιστροφή στην κορυφή -->
+<div id="scrollToTop" onclick="scrollToTop()">⬆</div>
+
+<style>
+#scrollToTop {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 22px;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+</style>
+
+<script>
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Εμφάνιση/Απόκρυψη του κουμπιού όταν γίνεται scroll
+window.addEventListener("scroll", function() {
+  const button = document.getElementById("scrollToTop");
+  if (window.scrollY > 200) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+});
+</script>
+
+
+
+</body>
+</html>

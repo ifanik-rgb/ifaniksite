@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+
+<html lang="el">
+<head>
+<meta charset="utf-8"/>
+<title>THOUGHTS</title>
+<style>
+        body {
+            background-color: #111;
+            color: #eee;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+
+}
+    header {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #222;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 0;
+    }
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .post {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #444;
+        }
+        .post h2 {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        .post .date {
+            color: #aaa;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        .post .content {
+            font-size: 1.1em;
+            line-height: 1.6em;
+        }
+    
+    .post {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .post .content {
+        flex: 1;
+        min-width: 250px;
+    }
+    .post .image-block {
+        flex: 0 0 280px;
+        text-align: right;
+    }
+    .post .image-block img {
+        width: 100%;
+        height: auto;
+        max-width: 280px;
+    }
+    .post h2 {
+        font-size: 0.8em;
+        line-height: 1.4em;
+        margin-bottom: 10px;
+    }
+    .post .date {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+    </style>
+</head>
+<body>
+<header>
+<h1>THOUGHTS</h1>
+</header>
+<nav>
+<a href="index_en.html">HOME</a>
+<a href="bio_en.html">BIO</a>
+<a href="projects_en.html">MY WORK</a>
+<a href="blog_en.html">BLOG</a>
+<a href="contact_en.html">CONTACT</a>
+</nav>
+
+
+
+<div class="post">
+
+
+<div class="content"><h2><u><b>***WHAT PHOTOGRAPHY MEANS TO ME***</b></u><br>
+I have always separated the art of photography into two parts:<br>
+What you SEE and what you SHOW.<br>
+What has always interested me is what I see....<br></br>
+*** WHAT YOU SEE...<br>
+One part is the purely photographic work: the shooting, the thought process of how to take a good artistic photo; the travels, being in the right place at the right time, in the right season, where something worth capturing happens — and being ready not just to photograph it, but to do so in a way that creates art.<br>
+This entire process, up until the moment the light enters your camera and the photograph is recorded, is for me the first, authentic stage.<br>
+At this stage, I would also include minimal editing — no intervention in your subject. Just a touch on light, contrast, color, perhaps a slight straightening of the frame or a discreet crop, to achieve a simple beautification of the image as you experienced it. For instance, I don’t find it wrong to crop a very strong photograph slightly if, say, there’s a plastic bottle in one corner ruining the feel. But no further. That’s the limit.<br><br>
+*** WHAT YOU SHOW...<br>
+The second part is what you want to show. This is no longer photography — it is editing, it is visual art.<br>
+There, you can take a photo and do whatever you want with it. Change it, combine it with others, paint on it, remove or add elements to achieve the final image you have in your mind. You can use any digital editing software, like Photoshop, or even give it to artificial intelligence and have it modify it as you ask... or as it decides.<br>
+As a visual artist, you could even skip the first part entirely. Ask AI to create an image from scratch and then work on it (or not at all), to express what you want to say.<br>
+For me, that’s not wrong. It’s art. And in art, everything is allowed.<br>
+But... it’s not photography.<br><br>
+Photography is something no artificial intelligence or scientific advancement can touch. Because photography has nothing to do with what you show to the world — but everything to do with what you see.<br>
+Photography contains only three elements:<br>
+The photographer, the light, and the environment around them.<br>
+And as Henri Cartier-Bresson, the pioneer, said:<br>
+Photography is the moment when the soul, the eye, and the mind align to capture not just an image, but its meaning.<br>
+And that will never change, no matter what humans discover...</h2><div class="date">📅 19 ΑΥΓΟΥΣΤΟΥ 2025</div>
+<div class="post">
+
+
+
+
+
+<!-- Βελάκι για επιστροφή στην κορυφή -->
+<div id="scrollToTop" onclick="scrollToTop()">⬆</div>
+
+<style>
+#scrollToTop {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 22px;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+</style>
+
+<script>
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Εμφάνιση/Απόκρυψη του κουμπιού όταν γίνεται scroll
+window.addEventListener("scroll", function() {
+  const button = document.getElementById("scrollToTop");
+  if (window.scrollY > 200) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+});
+</script>
+
+
+
+</body>
+</html>
