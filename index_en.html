@@ -318,10 +318,21 @@ aspect-ratio: 3/2;
     transform: scale(0.85);
     transform-origin: top center;
     width: 117.6%;
-    overflow-x: hidden;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width: 768px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    transform: scale(0.85);
+    transform-origin: top center;
     position: fixed;
     left: 0;
-    right: 0;
+    top: 0;
   }
 }
 </style>
