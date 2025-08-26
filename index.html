@@ -27,21 +27,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ν Ι Κ Ο Σ    Υ Φ Α Ν Τ Η Σ</title>
     <style>
-
-.header h1 {
-  font-size: clamp(24px, 6vw, 42px); /* responsive μέγεθος */
-  font-family: 'Cinzel', serif;
-  letter-spacing: 0.2em;
-  color: white;
-  text-align: center;
-  margin: 0;
-  white-space: nowrap;
-  overflow: visible;
-  text-overflow: unset;
-}
-
-
-
 @media screen and (max-width: 768px) {
   .responsive-title {
   font-size: 5vw;
@@ -88,14 +73,12 @@ header {
         text-align: center;
       }
       nav {
-  display: flex;
-  justify-content: center;
-  background-color: #222;
-  padding: 14px 0;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
+  justify-content: flex-start;
+  padding-left: 40px;
+        display: flex;
+        justify-content: center;
+        background-color: #222;
+      }
       nav a {
   font-size: 12px;
   padding: 8px 12px;
@@ -166,19 +149,18 @@ body {
   font-family: 'Cinzel', serif;
   color: white;
   text-align: center;
-  font-size: clamp(12px, 6vw, 40px);
-  letter-spacing: 0.4em;
+  font-size: clamp(14px, 5vw, 36px);
+  letter-spacing: 0.25em;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100vw;
-  box-sizing: border-box;
+  text-overflow: clip;
+  margin:40px 0 auto;
   padding: 0 4vw;
-  margin: 40px auto 20px auto;
   display: block;
+  max-width: 100%;
+  box-sizing: border-box;
+
 }
-
-
 
 
 
@@ -381,46 +363,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 </script>
 
 
-<style>
-.mySlides {
-display: none;
-width: 100%;
-height: auto;
-transition: opacity 1.5s ease-in-out;
-position: absolute;
-top: 0;
-left: 0;
-}
-
-
-.slideshow-container {
-position: relative;
-max-width: 100%;
-overflow: hidden;
-aspect-ratio: 3/2;
-}
-</style>
-
-
-<script>
-let slideIndex = 0;
-const slides = document.getElementsByClassName("mySlides");
-if (slides.length > 0) {
-slides[0].style.display = "block";
-slides[0].style.opacity = 1;
-setInterval(() => {
-slides[slideIndex].style.opacity = 0;
-setTimeout(() => {
-slides[slideIndex].style.display = "none";
-slideIndex = (slideIndex + 1) % slides.length;
-slides[slideIndex].style.display = "block";
-setTimeout(() => {
-slides[slideIndex].style.opacity = 1;
-}, 100);
-}, 1000);
-}, 5000); // Κάθε 5 δευτερόλεπτα
-}
-</script>
 
 
 </body>
