@@ -1,20 +1,14 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-<head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-
+  <head>
 
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="UTF-8">
   <title>nikosyfantis.com</title>
 
   <!-- Google tag -->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XNLJPFWLPW"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNLJPFWLPW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -22,22 +16,18 @@
     gtag('config', 'G-XNLJPFWLPW');
   </script>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"/>
-
-  <!-- Viewport (διορθωμένο) -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- υπόλοιπα css ή meta tags σου -->
+  <!-- υπόλοιπα css ή meta tags σου -->
 </head>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel&amp;display=swap" rel="stylesheet"/>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Ν Ι Κ Ο Σ    Υ Φ Α Ν Τ Η Σ</title>
-<style>
 
 
 
-@media screen and (max-width: 780px) {
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ν Ι Κ Ο Σ    Υ Φ Α Ν Τ Η Σ</title>
+    <style>
+@media screen and (max-width: 768px) {
   .responsive-title {
   font-size: 5vw;
     letter-spacing: 0.15em;
@@ -83,12 +73,14 @@ header {
         text-align: center;
       }
       nav {
-  justify-content: flex-start;
-  padding-left: 40px;
-        display: flex;
-        justify-content: center;
-        background-color: #222;
-      }
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  padding: 14px 0;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
       nav a {
   font-size: 12px;
   padding: 8px 12px;
@@ -159,17 +151,16 @@ body {
   font-family: 'Cinzel', serif;
   color: white;
   text-align: center;
-  font-size: clamp(12px, 4vw, 30px);
+  font-size: clamp(16px, 6vw, 48px);
   letter-spacing: 0.25em;
   white-space: normal;
-  overflow-wrap: break-word;
-  margin: 40px 0 auto;
-  padding: 0 4vw;
-  display: block;
+  overflow: visible;
+  margin: 40px auto;
+  padding: 0 6vw;
+  display: inline-block;
   max-width: 100%;
   box-sizing: border-box;
 }
-
 
 
 
@@ -210,37 +201,32 @@ body {
  
 
 
-
-@media only screen and (max-width: 600px) {
-  .site-title {
-    font-size: 24px !important;
-    letter-spacing: 4px !important;
-    text-align: center;
-    white-space: nowrap;
-  }
-}
 </style>
-</meta></head>
-<body>
-<header>
-<h1 class="responsive-title">n i k o s   y f a n t i s</h1>
-</header>
-<nav>
-<a href="index.html">ΑΡΧΙΚΗ</a>
-<a href="bio.html">ΒΙΟΓΡΑΦΙΚΟ</a>
-<a href="projects.html">Η ΔΟΥΛΕΙΑ ΜΟΥ</a>
-<a href="blog.html">BLOG</a>
-<a href="words.html">ΣΚΕΨΕΙΣ</a>
-<a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a>
-</nav>
+
+  </head>
+  <body>
+    <header>
+      <h1 class="responsive-title">n i k o s&nbsp;&nbsp;&nbsp;y f a n t i s</h1>
+
+    </header>
+    <nav>
+      <a href="index.html">ΑΡΧΙΚΗ</a>
+      <a href="bio.html">ΒΙΟΓΡΑΦΙΚΟ</a>
+      <a href="projects.html">Η ΔΟΥΛΕΙΑ ΜΟΥ</a>
+      <a href="blog.html">BLOG</a>
+      <a href="words.html">ΣΚΕΨΕΙΣ</a>
+      <a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+    </nav>
+
 <div class="language-switcher">
-<a href="index.html">
-<img alt="Greek" class="flag" src="27105.png"/>
-</a>
-<a href="index_en.html">
-<img alt="English" class="flag" src="18166.png"/>
-</a>
+  <a href="index.html">
+    <img src="27105.png" alt="Greek" class="flag">
+  </a>
+  <a href="index_en.html">
+    <img src="18166.png" alt="English" class="flag">
+  </a>
 </div>
+
 <style>
 .language-switcher {
   position: absolute;
@@ -258,7 +244,11 @@ body {
   border-radius: 3px;
 }
 </style>
-<div class="hero"></div>
+
+
+
+    <div class="hero"></div>
+  
 <script>
 const slides = [
   'index/slide1.jpg',
@@ -290,6 +280,7 @@ function showNextSlide() {
 setInterval(showNextSlide, 4000);
 window.onload = showNextSlide;
 </script>
+    
 <script>
 document.addEventListener('DOMContentLoaded', async () => {
   try {
@@ -370,5 +361,49 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 });
 </script>
+
+
+<style>
+.mySlides {
+display: none;
+width: 100%;
+height: auto;
+transition: opacity 1.5s ease-in-out;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+
+.slideshow-container {
+position: relative;
+max-width: 100%;
+overflow: hidden;
+aspect-ratio: 3/2;
+}
+</style>
+
+
+<script>
+let slideIndex = 0;
+const slides = document.getElementsByClassName("mySlides");
+if (slides.length > 0) {
+slides[0].style.display = "block";
+slides[0].style.opacity = 1;
+setInterval(() => {
+slides[slideIndex].style.opacity = 0;
+setTimeout(() => {
+slides[slideIndex].style.display = "none";
+slideIndex = (slideIndex + 1) % slides.length;
+slides[slideIndex].style.display = "block";
+setTimeout(() => {
+slides[slideIndex].style.opacity = 1;
+}, 100);
+}, 1000);
+}, 5000); // Κάθε 5 δευτερόλεπτα
+}
+</script>
+
+
 </body>
 </html>
