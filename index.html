@@ -363,6 +363,46 @@ document.addEventListener('DOMContentLoaded', async () => {
 </script>
 
 
+<style>
+.mySlides {
+display: none;
+width: 100%;
+height: auto;
+transition: opacity 1.5s ease-in-out;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+
+.slideshow-container {
+position: relative;
+max-width: 100%;
+overflow: hidden;
+aspect-ratio: 3/2;
+}
+</style>
+
+
+<script>
+let slideIndex = 0;
+const slides = document.getElementsByClassName("mySlides");
+if (slides.length > 0) {
+slides[0].style.display = "block";
+slides[0].style.opacity = 1;
+setInterval(() => {
+slides[slideIndex].style.opacity = 0;
+setTimeout(() => {
+slides[slideIndex].style.display = "none";
+slideIndex = (slideIndex + 1) % slides.length;
+slides[slideIndex].style.display = "block";
+setTimeout(() => {
+slides[slideIndex].style.opacity = 1;
+}, 100);
+}, 1000);
+}, 5000); // Κάθε 5 δευτερόλεπτα
+}
+</script>
 
 
 </body>
