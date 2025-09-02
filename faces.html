@@ -221,6 +221,27 @@ window.addEventListener("scroll", function() {
 });
 </script>
 
+<script>
+// Απενεργοποίηση δεξιού κλικ
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Απενεργοποίηση drag & drop στις εικόνες
+document.addEventListener('DOMContentLoaded', () => {
+  const imgs = document.querySelectorAll('img');
+  imgs.forEach(img => {
+    img.setAttribute('draggable', 'false');
+    img.addEventListener('dragstart', e => e.preventDefault());
+  });
+});
+
+// Απενεργοποίηση αντιγραφής
+document.addEventListener('copy', e => e.preventDefault());
+document.addEventListener('cut', e => e.preventDefault());
+</script>
+
+<footer style="background-color: #1a1a1a; color: white; text-align: center; padding: 10px 0; font-family: Arial, sans-serif; font-size: 14px;">
+  © 2025 Nikos Yfantis. All rights reserved.
+</footer>
 
 
 </body>

@@ -155,6 +155,27 @@
       <p>Το 2017 κυκλοφορεί το πρώτο του φωτογραφικό βιβλίο με τίτλο «575» με φωτογραφίες του και κείμενα της Αλεξίας Τούλιου από τις εκδόσεις «Το Δόντι». Το 2023 εκδίδει το βιβλίο «Ίχνη στην άμμο», επίσης από τις εκδόσεις «Το Δόντι», με φωτογραφίες, ποιήματα και κείμενα της Αλεξίας Τούλιου που έφυγε πρόωρα από τη ζωή. Μία συλλογή φόρος τιμής στη μνήμη της, που συγκεντρώνει το φως, τη σκιά και τα ίχνη της παρουσίας της.</p>
     </div>
 
-   
+   <script>
+// Απενεργοποίηση δεξιού κλικ
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Απενεργοποίηση drag & drop στις εικόνες
+document.addEventListener('DOMContentLoaded', () => {
+  const imgs = document.querySelectorAll('img');
+  imgs.forEach(img => {
+    img.setAttribute('draggable', 'false');
+    img.addEventListener('dragstart', e => e.preventDefault());
+  });
+});
+
+// Απενεργοποίηση αντιγραφής
+document.addEventListener('copy', e => e.preventDefault());
+document.addEventListener('cut', e => e.preventDefault());
+</script>
+
+<footer style="background-color: #1a1a1a; color: white; text-align: center; padding: 10px 0; font-family: Arial, sans-serif; font-size: 14px;">
+  © 2025 Nikos Yfantis. All rights reserved.
+</footer>
+
   </body>
 </html>
