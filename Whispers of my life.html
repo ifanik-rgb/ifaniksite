@@ -68,11 +68,69 @@
 <nav class="navbar">
   <a href="index.html">HOME</a>
   <a href="bio.html">BIO</a>
-  <a href="projects.html">MY WORK</a>
+  <div class="dropdown">
+    <a href="projects.html" class="dropbtn">MY WORK</a>
+    <div class="dropdown-content">
+      <a href="Whispers of my life.html">Whispers of my life</a>
+      <a href="colored_street.html">Street with colour</a>
+      <a href="at_work.html">At work</a>
+      <a href="guca.html">Guca Serbia</a>
+      <a href="konstantinopoli.html">Konstantinoupoli</a>
+      <a href="mikra_xamogela.html">Little smiles</a>
+      <a href="zante.html">Zante</a>
+      <a href="topia.html">Landscapes</a>
+      <a href="napoli.html">Napoli</a>
+      <a href="paris.html">Paris</a>
+      <a href="patra.html">Patra</a>
+      <a href="carnival.html">Carnival</a>
+      <a href="santorini.html">Santorini</a>
+      <a href="faces.html">Faces</a>
+      <a href="No_rolling_stones.html">No rolling stones</a>
+      <a href="alexia.html">Alexia</a>
+
+
+
+      <!-- More projects can be added here -->
+    </div>
+  </div>
   <a href="blog.html">BLOG</a>
   <a href="words.html">THOUGHTS</a>
   <a href="contact.html">CONTACT</a>
 </nav>
+
+<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111;
+  min-width: 160px;
+  z-index: 1;
+  text-align: left;
+}
+.dropdown-content a {
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #333;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+
+
+
 
 <style>
 .navbar {
